@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { GeistSans, GeistMono } from "@vercel/font/geist";
 import { Providers } from "./providers";
 import "./globals.css";
 
@@ -16,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}
+        className="antialiased"
       >
         <Providers>
           {children}
